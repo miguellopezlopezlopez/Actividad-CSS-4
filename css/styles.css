@@ -1,105 +1,140 @@
-/*Estilos generales*/
-*{
-    padding: 0px;
-    margin: 0px;
+/* Estilos generales */
+* {
+    padding: 0;
+    margin: 0;
     list-style: none;
     text-decoration: none;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background: url(/img/paven.png);
 }
-a{
+
+body {
+    background-image: url('/img/paven.png');
+}
+
+/* Estilos para enlaces */
+a {
     color: #529125;
 }
-a:hover{
+
+a:hover {
     color: #285616;
 }
 
-/*Cabecera*/
-header{
+/* Cabecera */
+header {
     width: 100%;
+    text-align: center;
 }
 
-#logotipo{
-    display: flex;
-    justify-content: center;
-    
-}
-#logotipo img{
+header img {
     width: 140px;
-    
+    display: block;
+    margin: 0 auto;
 }
-h1{
-    text-align: center;
+
+header h1 {
     font-size: 40px;
     color: #70b231;
     text-shadow: 0px 2px 4px #333333;
+    text-align: center;
 }
 
-/*Menú*/
-nav{
+/* Menú */
+nav {
     width: 100%;
     background-color: #333333;
     height: 40px;
     box-shadow: 0px 0px 2px grey;
 }
-nav ul{
+
+nav ul {
     width: 1130px;
     margin: 0 auto;
 }
-nav ul li{
+
+nav li {
     float: left;
-    height: 40px;
+    line-height: 40px;
 }
-nav ul li:hover{
+
+nav li:hover {
     background-color: #70b231;
     box-shadow: 0px 0px 4px grey inset;
 }
-nav ul li a{
+
+nav li a {
     display: block;
     color: white;
-    height: 40px;
-    line-height: 40px;
-    margin: 0 20px;
+    margin: 0 15px;
 }
 
-/*Contenido principal*/
-#content{
+/* Contenido Principal */
+#content {
     width: 1250px;
     min-height: 1100px;
     margin: 0 auto;
+
 }
-#aside{
+
+#aside {
+    float: left;
     width: 200px;
     background-color: white;
     border: 1px solid #ccc;
     box-shadow: 0px 2px 2px #ccc;    
+    margin-top: 25px;
+    margin-right: 25px;
 }
-#aside .widget{
+
+#aside .widget {
     width: 180px;
     margin: 0 auto;
 }
-#aside input[type = "submit"]:hover{
+
+#aside button {
+    background-color: #70b231;
+    border-radius: 5px;
     box-shadow: 0px 0px 2px gray;
 }
 
-/*Secciones*/
-#sections{
-    float: left;
-    width: 75%;    
+#aside button:hover {
+    box-shadow: 0px 0px 2px gray;
 }
-#sections section{
+
+/* Secciones */
+#sections {
+    float: left;
+    width: 75%;
+}
+
+#sections section {
     margin-top: 40px;
     background-color: white;
-    box-shadow:  0px 0px 4px #c9c9c9;
+    box-shadow: 0px 0px 4px #c9c9c9;
 }
-#sections section p{
+
+#sections p {
     text-align: justify;
 }
 
-footer{
+/* Pie de página */
+footer {
     width: 100%;
-    margin: 0 auto;
     background-color: #333333;
     color: white;
+    text-align: center;
     box-shadow: 0px 0px 2px gray;
 }
+
+/*Diferentes tamaños de pantalla*/ 
+@media (max-width: 768px) {
+    body {
+    background-color: lightgreen;
+    }
+   }
+
+   @media (max-width: 500px) {
+    body {
+    background-color: lightcoral;
+    }
+   }
