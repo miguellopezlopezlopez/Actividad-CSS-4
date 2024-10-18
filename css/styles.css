@@ -1,0 +1,105 @@
+/*Estilos generales*/
+*{
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: url(/img/paven.png);
+}
+a{
+    color: #529125;
+}
+a:hover{
+    color: #285616;
+}
+
+/*Cabecera*/
+header{
+    width: 100%;
+}
+
+#logotipo{
+    display: flex;
+    justify-content: center;
+    
+}
+#logotipo img{
+    width: 140px;
+    
+}
+h1{
+    text-align: center;
+    font-size: 40px;
+    color: #70b231;
+    text-shadow: 0px 2px 4px #333333;
+}
+
+/*Menú*/
+nav{
+    width: 100%;
+    background-color: #333333;
+    height: 40px;
+    box-shadow: 0px 0px 2px grey;
+}
+nav ul{
+    width: 1130px;
+    margin: 0 auto;
+}
+nav ul li{
+    float: left;
+    height: 40px;
+}
+nav ul li:hover{
+    background-color: #70b231;
+    box-shadow: 0px 0px 4px grey inset;
+}
+nav ul li a{
+    display: block;
+    color: white;
+    height: 40px;
+    line-height: 40px;
+    margin: 0 20px;
+}
+
+/*Contenido principal*/
+#content{
+    width: 1250px;
+    min-height: 1100px;
+    margin: 0 auto;
+}
+#aside{
+    width: 200px;
+    background-color: white;
+    border: 1px solid #ccc;
+    box-shadow: 0px 2px 2px #ccc;    
+}
+#aside .widget{
+    width: 180px;
+    margin: 0 auto;
+}
+#aside input[type = "submit"]:hover{
+    box-shadow: 0px 0px 2px gray;
+}
+
+/*Secciones*/
+#sections{
+    float: left;
+    width: 75%;    
+}
+#sections section{
+    margin-top: 40px;
+    background-color: white;
+    box-shadow:  0px 0px 4px #c9c9c9;
+}
+#sections section p{
+    text-align: justify;
+}
+
+footer{
+    width: 100%;
+    margin: 0 auto;
+    background-color: #333333;
+    color: white;
+    box-shadow: 0px 0px 2px gray;
+}
